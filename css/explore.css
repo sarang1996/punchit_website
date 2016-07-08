@@ -1,0 +1,21 @@
+.main_body{
+    margin-top: 37px !important;
+}
+
+#explore_search_bar{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 5;
+    border-radius: 2px 2px 2px 2px;
+    /*border: 1px solid #585858;*/
+}
+
+#explore_search_bar form .input-field{
+    margin-top: 0px;
+}
+
+#explore_search_bar form input[type=text]{
+    border-bottom: none !important;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}

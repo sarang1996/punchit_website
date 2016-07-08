@@ -1,0 +1,48 @@
+.main_body .card{
+    padding: 0px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.main_body .card .card-image img{
+    height: 140px !important;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.main_body .card .card-image .card-title{
+    text-shadow: 3px 3px 6px #f8bbd0;
+}
+
+.main_body .card .card-image .card-title a{
+    color: #ffffff;
+}
+
+.main_body .card .card-content{
+    text-align: justify;
+    font-size: 13px;
+}
+
+.main_body .card .card-content .card_footer{
+    position: absolute;
+    text-align: center;
+    left: 70px;
+    bottom: 5px;
+    color: #ff4545;
+}
+
+.main_body .card .btn-floating{
+    position: absolute;
+    right: 10px;
+    top: 122px;
+}
+
+@media only screen and (device-width: 1024px) {
+    .main_body .card .card-content .card_footer{
+        left: 40px !important;
+    }
+}
+
+@media only screen and (device-width: 1440px) {
+    .main_body .card .card-content .card_footer{
+        left: 70px !important;
+    }
+}

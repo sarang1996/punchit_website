@@ -1,0 +1,178 @@
+<link rel="stylesheet" href="css/index.css"/>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <div id="nav_section_1" class="row">
+                <div class="col s12">
+
+                    <div class="col l4 s4">
+                        <a href="#" class="brand-logo">
+                            <img src="images/official_logo(60Hg).png" class="responsive-img">
+                        </a>
+                    </div>
+
+                    <div class="col l8 s8 right">
+
+                        <span style="margin-left: 70px; font-size: 2rem; color: #424242;"></span>
+
+                        <ul class="right" style="float: right;">
+                            <li class="list_items"> <a class="modal-trigger" id="login_btn_a"> <div id="login_btn" class="login_signup_btn">LOGIN</div> </a> </li>
+                            <li class="list_items"> <a class="modal-trigger" id="signup_btn_a"> <div id="signup_btn" class="login_signup_btn">SIGN UP</div> </a> </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- navbar ends -->
+
+
+<!-- Login Model -->
+<div class="modal" id="login_modal">
+    <div class="modal-content">
+
+        <div class="row">
+            <form class="col s12">
+
+                <h3>Login</h3>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="login_email" type="text" class="validate" ng-model="vm.username">
+                        <label for="login_email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="login_password" type="password" class="validate" ng-model="vm.password">
+                        <label for="login_password">Password</label>
+                    </div>
+                </div>
+
+                <div class="row" style="text-align: center;" >
+                    <a class="waves-effect waves-light btn" ng-click="vm.login()" > Login </a>
+                </div>
+
+                <div class="row" style="text-align: center; font-size: 12px;">
+                    <a id="forgot_password" href="#!" style="color: #ff4545;">Forgot Password? Click Here </a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- Login Modal ENDS -->
+
+<!-- Signup Model -->
+<div class="modal" id="signup_modal" >
+    <div class="modal-content">
+
+        <div class="row">
+            <form class="col s12">
+
+                <h3>Register</h3>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="signup_full_name" type="text" class="validate" ng-model= "full_name">
+                        <label for="signup_full_name">Full Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="signup_ninja_name" type="text" class="validate" ng-model="ninja_name">
+                        <label for="signup_ninja_name">Ninja Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="signup_email" type="text" class="validate" ng-model="email">
+                        <label for="signup_email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="signup_password" type="password" class="validate" ng-model=password>
+                        <label for="signup_password">Password</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="signup_confirm_password" type="password" class="validate" ng-model="verify_password">
+                        <label for="signup_confirm_password">Confirm Password</label>
+                    </div>
+                </div>
+
+                <div class="row" style="text-align: center;">
+                    <a class="waves-effect waves-light btn" ng-click="signup()">Sign up</a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- Signup Model ENDS -->
+
+
+<div class="main_body row">
+
+    <div class="col s6">
+        <img src="images/index_triangle.png" class="responsive-img" style="position: relative; top: -13px; height: 490px;"/>
+
+        <div id="index_content">
+            <h4>"Where Your Opinion Matters !!!"</h4>
+            <p>
+                Make Friends, Create Community and Give Your Valuable Punch <span style="font-size: 2rem;">&amp;</span> Stay Tuned with Punchit.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="col s6">
+        <img src="images/index_mobile_images.png" class="responsive-img" style="position: absolute; right: 1px; top: 120px; width: 57%; z-index: 5;"/>
+    </div>
+
+</div>
+
+<footer class="page-footer" style="position: relative; top: -35px;" >
+
+        <div class="row">
+            <div class="col s12" style="margin-top: -7px;">
+
+                <div class="col s2">
+                    <a href="#!"><img src="images/app_store.png" class="responsive-img"></a>
+                </div>
+
+                <div class="col s2">
+                    <a href="#!"><img src="images/play_store.png" class="responsive-img" style="top: 5px;"></a>
+                </div>
+
+            </div>
+        </div>
+
+</footer>
+<script type="text/javascript">
+  $('#login_btn_a').click(function() {
+    $('#login_modal').openModal()
+  })
+  $('#signup_btn_a').click(function() {
+    $('#signup_modal').openModal()
+  })
+</script>

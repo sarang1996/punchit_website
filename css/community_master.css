@@ -1,0 +1,32 @@
+.community_header .card-content.container{
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.community_header .btn-small{
+    line-height: 25px;
+    height: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.community_header .community_dp img{
+    margin-top: 15px;
+    height: 150px;
+}
+
+.community_header #community_name{
+    color: #ff4545;
+    font-size: 2.2em;
+}
+
+.community_header #community_invite_btn{
+    margin-left: 30px;
+    background-color: #efefef;
+    color: #585858 !important;
+}
+
+.main_body{
+    margin-top: -30px !important;
+}

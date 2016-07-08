@@ -1,0 +1,46 @@
+body{
+    /*background-color: #eeeeee;*/
+    /*color: #424242 !important;*/
+}
+
+label{
+    color: #585858 !important;
+}
+
+.main_body{
+    margin-top: 60px !important;
+}
+
+.material-icons{
+    color: #ff4545;
+}
+
+input[type=text],
+input[type=email] {
+    color: #424242 !important;
+}
+
+#user_pic_settings{
+    height: 50px;
+    width: 50px;
+    margin-top: -10px;
+}
+
+.settings_edit.btn{
+    background-color: #ff4545;
+    color: #ffffff;
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+#user_settings_form .input-field label{
+    margin-top: 0px;
+}
+
+#change_password_section,
+#ask_for_support_section,
+#report_bug_section{
+    padding-left: 20px;
+}

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Freehand521 BT';
+    src: url('../fonts/freehand_521_bt.ttf') format('truetype');
+}
+
+body, html{
+    height: 100%;
+}
+
+nav #nav_section_1{
+    padding-top: 0px !important;
+}
+
+nav .brand-logo{
+    margin-top: 10px;
+}
+
+nav ul a{
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.page-footer{
+    bottom: 0px;
+    height: 100%;
+}
+
+footer.page-footer{
+    padding: 0px;
+    position: relative;
+    background-color: #ffffff;
+    -moz-box-shadow: 0 -5px 6px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 -5px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 -5px 6px rgba(0,0,0,0.1);
+}
+
+.main_body .col{
+    padding: 0px;
+}
+
+footer.page-footer img{
+    position: relative;
+    height: 80px;
+}
+
+footer.page-footer .col .s2:nth-child(2){
+    margin-left: -40px;
+}
+
+#index_content{
+    color: #ffffff;
+    position: absolute;
+    z-index: 5;
+    top: 225px;
+    width: 320px;
+    text-align: center;
+    font-size: 14pt;
+    line-height: 25px;
+    word-wrap: normal;
+}
+
+.main_body #index_content h4{
+    font-family: "Freehand521 BT";
+}
+
+.list_items{
+    height: 100%;
+    padding: 0px;
+}
+
+.login_signup_btn{
+    text-align: center;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+
+}
+
+.list_items a{
+    padding: 0px !important;
+}
+
+#login_btn_a:hover #login_btn {
+    text-align: center;
+    background-color: rgba(255,69,69,1);
+    color: #ffffff;
+    transition: background-color 1s;
+}
+
+#signup_btn_a:hover #signup_btn {
+    text-align: center;
+    background-color: rgba(255,69,69,1);
+    color: #ffffff;
+    transition: background-color 1s;
+}
+
+.modal#login_modal{
+    /*width: 40%;*/
+}

@@ -1,0 +1,44 @@
+.create_community_main a{
+    color: #585858;
+}
+
+.create_community_main a .card{
+    text-align: center;
+}
+
+.create_community_main a .card img{
+    height: 50px;
+    width: 50px;
+}
+
+.create_community_main a .card span{
+    line-height: 50px;
+}
+
+#community_suggestions .card{
+    border-radius: 5px 5px 5px 5px;
+}
+
+#community_suggestions .card .card-content{
+    /*border-left: 4px solid rgba(88,88,88, 1);*/
+    /*border-bottom-left-radius: 5px;*/
+    height: 50px;
+    padding: 0px;
+    line-height: 50px;
+}
+
+#community_suggestions .card img{
+    border-radius: 5px 5px 0px 0px;
+    height: 150px;
+    width: 100%;
+}
+
+.fixed-action-btn{
+    bottom: 25px;
+    right: 34px;
+}
+
+.btn-floating,
+.btn-floating:hover{
+    background-color: #ff4545;
+}

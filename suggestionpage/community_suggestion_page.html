@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="css/community_suggestion.css">
+
+<div class="container main_body">
+    <div class="col s12">
+
+        <div class="row" style="margin-top: 20px;">
+                <h4 align="center">Top communites on Punchit.io</h4>
+        </div>
+
+        <div class="row">
+                <div class="col s12 m6 l3" ng-repeat="t in vm.times">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/Joker_fights_the_new_Batman.png" class="responsive">
+                            <span class="card-title">
+                                <a href="#!">Community Name</a>
+                            </span>
+                        </div>
+                        <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        <div class="card-content">
+                            <p>
+                              {{vm.sampleText | characters : 100}}
+                            </p>
+
+
+                        </div>
+                        <div class="card_footer">
+                            <center style="color:#ff4545">
+                              <b>1.5K Ninjas</b>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</div>

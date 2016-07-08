@@ -1,0 +1,93 @@
+.main_body a,
+.user_header a{
+    color: #585858;
+}
+
+.main_body .card{
+    border-radius: 5px;
+}
+
+.main_body .card .card-content{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.main_body .card .card-content{
+    text-align: center;
+}
+
+.main_body .card .card-content hr{
+    border-color: rgba(88,88,88,0.2);
+}
+
+.main_body .card .card-content .card-title{
+    font-size: 18px;
+}
+
+.main_body .card .post_images .col{
+    padding: 0 0.50rem;
+}
+
+.main_body .card .post_images{
+    /*margin-top: 10px;*/
+}
+
+/*.main_body .card #post_images .col:first-child img{*/
+
+/*}*/
+
+/*.main_body .card #post_images .col:nth-child(2) img{*/
+
+/*}*/
+
+.main_body .card .card-content .post_images img{
+    height: 170px;
+    border-radius: 5px;
+}
+
+
+.user_header .btn-small{
+    line-height: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.user_header .card-content.container{
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.user_header .card-content.container .user_follow_data{
+    text-align: center;
+}
+
+.user_header .card-content.container .user_follow_data .row .col{
+    border-right: 1px solid;
+}
+
+.user_header .card-content.container .user_follow_data .row .col:last-child{
+    border-right: none;
+}
+
+.user_header .card-content.container .user_master_dp{
+    height: 150px;
+    width: 150px;
+    line-height: 250px;
+}
+
+.user_header .card-content.container .user_master_dp img{
+    border-radius: 50%;
+    height: 130px;
+    margin-top: 10px;
+}
+
+.user_header .card-content.container #user_ninga_name{
+    font-size: 12pt;
+    font-weight: bold;
+    color: #ff4545;
+}
+
+a{
+    color: #585858;
+}

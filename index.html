@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Community Title</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/common_styles.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script src="js/common_js.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!-- Angular JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+
+        <!-- ng-cookies -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-cookies.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+
+
+        <script src="app.js"></script>
+        <script src="modules/truncate.js"></script>
+        <script src="home/homeController.js"></script>
+        <script src="masterpage/masterPageController.js"></script>
+        <script src="suggestionpage/suggestionController.js"></script>
+        <script src="app-services/AuthenticationService.js"></script>
+        <script src="app-services/UserService.js"></script>
+        <script src="app-services/navbarService.js"></script>
+        <script src="navbar/navbarController.js"></script>
+        <script src="communityHome/communityHomeController.js" ></script>
+
+    </head>
+    <body ng-app="app">
+        <!-- navbar starts -->
+        <div ng-controller="navbarController">
+          <div class="navbar-fixed" ng-show="navbar.shouldNavBarShow">
+              <nav style="z-index:10;box-shadow:None">
+                  <div class="nav-wrapper">
+                      <div id="nav_section_1" class="row">
+                          <div class="col s12">
+
+                              <div class="col l4 s4">
+                                  <a href="#" class="brand-logo">
+                                      <img src="images/official_logo(60Hg).png" class="responsive-img">
+                                  </a>
+                              </div>
+                              <div class="col l8 s8 right">
+
+                                  <span style="margin-left: 70px; font-size: 2rem; color: #424242;"></span>
+
+                                  <ul class="right hide-on-med-and-down" ng-show="!navbar.shouldShowNextButton">
+                                      <li> <a class="dropdown-button" data-activates="notification_dropdown" data-beloworigin="true"> <img id="nav_notification_icon" class="responsive-img" src="images/icons/notification.png"> </a> </li>
+                                      <!-- <li> <a class="dropdown-button" data-activates="profile_dropdown" data-beloworigin="true"> <img id="user_profile_pic" src="images/punch_button.png" class="responsive-img circle"> </a> </li> -->
+                                      <li><a class="dropdown-button" data-activates="profile_dropdown"><img id="user_profile_pic" src="images/punch_button.png" class="responsive-img circle"><i class="material-icons right">arrow_drop_down</i></a></li>
+
+                                  </ul>
+                                  <ul class="right" ng-show="navbar.shouldShowNextButton">
+                                  <li>
+                                  <a>
+                                    <span style="color:#585858"><i class="material-icons right" style="margin-left:0px">navigate_next</i>Skip</span>
+                                  </a>
+                                    </li>
+                                  </ul>
+                              </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </nav>
+          </div>
+
+
+          <div id="tabs_nav_parent" ng-show="navbar.shouldTabBarShow" style="z-index:1;border-top: 2px solid #c3c3c3;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)">
+              <div id="tabs_nav" class="container" style="margin-top:5px">
+
+                  <div class="row">
+                      <div class="col s12">
+                          <div class="col s12 m12 l8" style="text-align: center;">
+                              <ul class="tabs" style="height: 39px;">
+                                  <li class="tab col s2 tab_button" style="height:34px;"><a href="./community_master_page.html">Community</a></li>
+
+                                  <li class="tab col s2" style="border-right"><a href="./fzone_master_page.html">F'Zone</a></li>
+
+                                  <li class="tab col s2" style="border-right"><a href="./explore_page.html">Explore</a></li>
+
+                                  <li class="tab col s2" style="border-right"><a href="./new_punch.html">Create Punch</a></li>
+                              </ul>
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+          <ul id='profile_dropdown' class='dropdown-content' style="margin-top:61px">
+              <li><a href="./user_master_page.html">My Profile</a></li>
+              <li><a href="./user_settings_page.html">Settings</a></li>
+              <!--<li class="divider"></li>-->
+          </ul>
+
+          <!-- Profile Dropdown -->
+          <ul id='notification_dropdown' class='dropdown-content' style="">
+              <li><a href="#!">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Settings</a></li>
+              <li class="divider"></li>
+              <!--<li class="divider"></li>-->
+          </ul>
+
+          <!-- navbar ends -->
+          <div ng-view>
+          </div>
+        </div>
+    </body>
+<style type="text/css">
+    nav{
+      -webkit-transform: translateZ(0);
+    }
+</style>
+</html>
