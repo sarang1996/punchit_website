@@ -1,0 +1,90 @@
+.create_community_main a{
+    color: #585858;
+}
+
+.create_community_main a .card{
+    text-align: center;
+    width : 100%
+}
+
+.create_community_main a .card img{
+    height: 50px;
+    width: 50px;
+}
+
+.create_community_main a .card p{
+    line-height: 35px;
+}
+
+#my_communities .card{
+    border-radius: 5px 5px 5px 5px;
+}
+
+#my_communities .card .card-content{
+    /*border-left: 4px solid rgba(88,88,88, 1);*/
+    /*border-bottom-left-radius: 5px;*/
+    height: 35px;
+    padding: 0px;
+    line-height: 50px;
+}
+
+#my_communities .card img{
+    border-radius: 5px 5px 0px 0px;
+    height: 160px;
+    width: 100%;
+}
+
+.fixed-action-btn{
+    bottom: 25px;
+    right: 40px !important;
+}
+
+.btn-floating,
+.btn-floating:hover{
+    background-color: #ff4545 !important;
+}
+
+/* Create Community Modal */
+
+#create_community_modal.modal{
+  width: 37%;
+  overflow: hidden;
+  /*padding: 0px;*/
+}
+
+#create_community_modal.modal .modal-content{
+  padding: 0px;
+  margin-right: -50px;
+}
+
+#create_community_modal #create_community_modal_top1{
+  text-align: center;
+  background-color: #585858;
+  color: #ff4545;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#create_community_modal #create_community_modal_top1 input[type=text]{
+  margin-left: -20px;
+  width: 50%;
+  border: none !important;
+  color: #ff4545 !important;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#create_community_modal #create_community_modal_top1 input[placeholder]{
+  color: #ff4545 !important;
+}
+/* Create Community Modal ENDS */
+
+@media only screen and (min-width: 600px) {
+  .container .main_body{
+    margin-top: 7%
+  }
+  .create_community_main a .card{
+      text-align: center;
+      width : 100%
+  }
+}

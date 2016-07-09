@@ -6,5 +6,9 @@
     function communityHomeController(navbar){
       var vm = this;
       vm.navbar = navbar
+      vm.data = []
+      for (var i = 0; i <= 10; i++) {
+        vm.data.push(i)
+      }
     }
 })();

@@ -295,8 +295,8 @@ i.right{
 
 @media only screen and (min-width: 993px) {
   /*PC and 15 inch laptops*/
-  .row .col.l8{
-    margin-left: 20%;
+  .row .col.l9{
+    margin-left: 14%;
   }
 }
 
