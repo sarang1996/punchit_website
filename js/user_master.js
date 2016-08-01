@@ -1,5 +1,5 @@
 /**
- * Created by jay on 18/06/2016.
+ * Created by 404labs.
  */
 $(document).ready(function(){
 

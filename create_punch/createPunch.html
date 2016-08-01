@@ -1,0 +1,400 @@
+<link rel="stylesheet" href="css/new_punch.css">
+<script src="js/create_punch_ui.js"></script>
+<div class="main_body">
+  <div class="col l8">
+
+      <div class="row">
+
+          <div class="col s6 left hide-on-med-and-down" style="text-align: center;">
+
+              <div class="row"><br/></div>
+
+              <div class="row parent-compare" style="position: fixed; padding-left: 50px;">
+                  <img src="images/new_punch_learn.png" class="compare responsive-img" style="width: 90%; height: 400px; margin-top: -70px;">
+                  <ul style="margin-top: -20px; list-style-type: disk; padding-top:85px">
+                      <li>Click on the plus button and select your option.</li>
+                      <li>Then, fill all the details and select your tags according to your interest.</li>
+                  </ul>
+              </div>
+
+          </div>
+
+          <div class="col s12 m12 l6">
+              <div class="card-panel">
+
+                  <div class="row">
+
+                      <div class="col s12">
+                          <ul class="tabs">
+                              <li class="tab col s6 m6 l6"><a href="#punch_to_wall_tab_content">My Wall</a></li>
+                              <li class="tab col s6 m6 l6"><a class="active" href="#punch_to_community_tab_content">Community</a></li>
+                          </ul>
+                      </div>
+
+                      <form class="col s12">
+
+                          <div class="tab_content">
+
+                              <div id="commont_content">
+
+                                  <div class="row">
+                                      <div class="input-field col s12">
+                                          <input id="add_punch_title" type="text" class="validate" placeholder="Punch Title">
+                                          <!--<label for="add_punch_title">Punch Title</label>-->
+                                      </div>
+                                  </div>
+
+                                  <div class="row" style="padding-left: 10px; padding-right: 10px;">
+                                      <div class="col s12 m12 l12">
+                                          <div class="row">
+
+                                              <div class="col s6 m6 l6">
+                                                  <div class="new_punch_image_div" id="new_punch_image_div_1">
+
+                                                      <div id="image_1_opacity" class="image_opacity">
+                                                          <a class="btn-floating btn-large waves-effect waves-dark" id="add_image_1"><i class="material-icons">add</i></a>
+
+                                                          <!-- sub options for uploading image -->
+                                                  <span id="add_image_1_menu" class="">
+                                                      <a href="" class="menu-item" onclick="$('#image_file_1').trigger('click');"> <img class="responsive-img" src="images/icons/new_punch_upload.png"/> </a>
+                                                      <!--<a href="#upload_text_1_modal" class="menu-item modal-trigger"> <img class="responsive-img" src="images/icons/new_punch_text.png"/> </a>-->
+                                                      <a href="#upload_web_image_1_modal" class="menu-item modal-trigger"> <img class="responsive-img" src="images/icons/new_punch_web.png"/> </a>
+                                                  </span>
+
+                                                          <input type="file" id="image_file_1" accept="image/jpeg, image/jpg, image/png" style="display: none;" onchange="getImageURL(this, 1);"/>
+
+                                                          <!-- Image form WEB upload Modal Structure -->
+                                                          <div id="upload_web_image_1_modal" class="modal">
+                                                              <div class="modal-content">
+                                                                  <!-- <h4>Select any image</h4> -->
+
+                                                                  <div class="row">
+                                                                      <div class="col s6 offset-s3" id="explore_search_bar">
+                                                                          <form>
+                                                                              <div class="input-field">
+                                                                                  <input id="search" type="text" placeholder="What do you want to search?" required>
+                                                                              </div>
+                                                                          </form>
+
+                                                                      </div>
+                                                                  </div>
+
+                                                                  <div class="row">
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                  <!--<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Upload</a>-->
+                                                              </div>
+                                                          </div>
+                                                          <!-- Image form WEB upload Modal Structure ENDS -->
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="col s6 m6 l6">
+                                                  <div class="new_punch_image_div" id="new_punch_image_div_2">
+
+                                                      <div id="image_2_opacity" class="image_opacity">
+                                                          <a class="btn-floating btn-large waves-effect waves-dark" id="add_image_2"><i class="material-icons">add</i></a>
+
+                                                          <!-- sub options for uploading image -->
+                                                  <span id="add_image_2_menu" class="">
+                                                      <a href="" class="menu-item" onclick="$('#image_file_2').trigger('click');"> <img class="responsive-img" src="images/icons/new_punch_upload.png"/> </a>
+                                                      <!--<a href="#upload_text_2_modal" class="menu-item modal-trigger"> <img class="responsive-img" src="images/icons/new_punch_text.png"/> </a>-->
+                                                      <a href="#upload_web_image_2_modal" class="menu-item modal-trigger"> <img class="responsive-img" src="images/icons/new_punch_web.png"/> </a>
+                                                  </span>
+
+                                                          <input type="file" id="image_file_2" accept="image/jpeg, image/jpg, image/png" style="display: none;" onchange="getImageURL(this, 2);"/>
+
+                                                          <!-- Image form WEB upload Modal Structure -->
+                                                          <div id="upload_web_image_2_modal" class="modal">
+                                                              <div class="modal-content">
+                                                                  <!-- <h4>Select any image</h4> -->
+
+                                                                  <div class="row">
+                                                                      <div class="col s6 offset-s3" id="explore_search_bar">
+                                                                          <form>
+                                                                              <div class="input-field">
+                                                                                  <input id="search" type="text" placeholder="What do you want to search?" required>
+                                                                              </div>
+                                                                          </form>
+
+                                                                      </div>
+                                                                  </div>
+
+                                                                  <div class="row">
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                      <div class="col s4">
+                                                                          <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img image_from_web"/>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                  <!--<a href="#!" class="modal-action modal-close waves-effect waves-green btn">Upload</a>-->
+                                                              </div>
+                                                          </div>
+                                                          <!-- Image form WEB upload Modal Structure ENDS -->
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                          <div class="row" id="new_punch_titles">
+                                              <div class="input-field col s6">
+                                                  <input placeholder="Title 1" id="punch_image_title_1" type="text" class="validate">
+                                              </div>
+
+                                              <div class="input-field col s6">
+                                                  <input placeholder="Title 2" id="punch_image_title_2" type="text" class="validate">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </div>
+
+                              <div id="punch_to_wall_tab_content" class="col s12">
+                                  <a href="#add_tags_modal" class="btn-floating btn-large waves-effect waves-light modal-trigger" id="add_punch_tags"> <i class="material-icons">arrow_forward</i> </a>
+                              </div>
+
+                              <div id="punch_to_community_tab_content" class="col s12">
+                                  <a href="#select_community_modal" class="btn-floating btn-large waves-effect waves-light modal-trigger" id="select_community"> <i class="material-icons">arrow_forward</i> </a>
+                              </div>
+
+
+                              <!-- Select Community Modal -->
+
+                              <div id="select_community_modal" class="modal">
+                                  <div class="modal-content">
+                                    <div class="row">
+
+                                      <h4>Select Community</h4>
+
+                                        <form id="search_community">
+                                          <a href="#!" id="magnify_icon_a"><i class="material-icons" id="magnify_icon">search</i></a>
+                                          <div class="input-field" id="search_community_tf" hidden>
+                                            <input id="search" type="search" required>
+                                            <!-- <label for="search"><i class="material-icons">search</i></label> -->
+                                            <i class="material-icons" id="close_icon">close</i>
+                                          </div>
+                                        </form>
+                                      </div>
+
+                                      <div class="row">
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                        <!-- single community suggestion -->
+                                        <div class="col s3">
+                                            <a href="#!" onclick="alert(1);">
+                                                <div class="card">
+                                                    <div class="card-image">
+                                                        <img src="images/Joker_fights_the_new_Batman.png" class="responsive-img">
+                                                    </div>
+
+                                                    <div class="card-content">
+                                                        <p>C Name</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- single community suggestion ENDS-->
+
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <!-- Select Community Modal ENDS -->
+
+                              <!-- Select Tags Modal -->
+                              <div id="add_tags_modal" class="modal">
+                                  <div class="modal-content">
+                                      <h4>Select Tags</h4>
+                                      <br/>
+                                      <div class="row">
+
+                                          <a href="#!" class="col s5 tags btn" is_selected="0" onclick="selectTag($(this));">Batman</a>
+
+                                          <div class="col s2"><br/></div>
+
+                                          <a href="#!" class="col s5 tags btn" is_selected="0" onclick="selectTag($(this));">Civil War</a>
+
+                                          <a href="#!" class="modal-action modal-close waves-effect waves-light btn" style="margin-top: 50px;">SUBMIT</a>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Select Tags Modal ENDS -->
+
+
+                          </div>
+
+                      </form>
+
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</div>

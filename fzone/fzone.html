@@ -1,0 +1,83 @@
+<div class="container main_body">
+  <div class="row">
+    <div class="col l7 m12 s12 card post_card">
+        <div class="row">
+            <div class="col s12">
+                <div class="col l1 m2 s2" style="padding-right: 0rem">
+                    <img src="images/punch_button.png" class="circle responsive-img post_user_img"/>
+                </div>
+                <span id="post_user_name" class="col l8 m8 s8">Yash Chauhan<br><span style="color:#989898" id="post_timestamp">10 min</span></span>
+
+                <div class="col l3 m1 s2">
+                    <a class="dropdown-button" data-activates="post_more_menu" data-beloworigin="true"> <i class="material-icons post_menu">more_vert</i> </a>
+                </div>
+
+                <!-- post more menu dropdown -->
+                <ul id="post_more_menu" class="dropdown-content">
+                    <li> <a href="#!">abc</a> </li>
+                    <li> <a href="#!">bcd</a> </li>
+                </ul>
+                <!-- post more menu dropdown ENDS -->
+
+                <div class="col s12">
+                    <hr/
+>                </div>
+
+                <div class="col s12 post_title_parent_div">
+                  <span class="post_title">{{vm.post_title |characters : 100}}</span>
+                </div>
+
+                <div class="row post_images">
+                    <div class="col l5 m5 s6">
+                        <a class="waves-effect waves-light"> <img class="responsive-img" src="images/Joker_fights_the_new_Batman.png" alt=""/> </a>
+                        <br/>
+                        <span class="post_image_caption">Deadpool</span>
+                        <hr/>
+                        <span class="post_image_total_punches">3</span>
+                    </div>
+                    <div class="col l5 m5 s6">
+                        <a class="waves-effect waves-light"> <img class="responsive-img" src="images/Joker_fights_the_new_Batman.png" alt=""/> </a>
+                        <br/>
+                        <span class="post_image_caption">The Revenant</span>
+                        <hr/>
+                        <span class="post_image_total_punches">3</span>
+                    </div>
+                </div>
+
+                <div class="col s12" style="margin-top: 30px;">
+
+                    <div class="post_below_icons col s6">
+                        <a href="#comment_modal" class="modal-trigger"> <img src="images/icons/comment.png" class="responsive-img"> <span class="" id="comment_badge">1</span> </a>
+                        <a href="#!"> <img src="images/icons/share.png" class="responsive-img"> <span class="" id="share_badge">5</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+
+<style>
+@media only screen and (min-width: 600px) {
+  .container{
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (min-width: 993px){
+  .container {
+    margin-top: 5%;
+  }
+  .card {
+    margin-left: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .main_body {
+    margin-top: 18%
+  }
+
+}
+</style>

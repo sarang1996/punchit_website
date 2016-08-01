@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,6 +15,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script src="js/common_js.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        
 
         <!-- Angular JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
@@ -36,10 +35,18 @@
         <script src="app-services/navbarService.js"></script>
         <script src="navbar/navbarController.js"></script>
         <script src="communityHome/communityHomeController.js" ></script>
-
+        <script src="fzone/friendZoneController.js"></script>
+        <script src="create_punch/createPunchController.js"></script>
     </head>
     <body ng-app="app">
         <!-- navbar starts -->
+        <div class="fixed-action-btn click-to-toggle">
+            <a class="btn-floating btn-large red"><i class="material-icons">add</i></a>
+            <ul>
+              <li><a class="btn-floating blue darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Create Punch"><i class="material-icons">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Community"><i class="material-icons">format_quote</i></a></li>
+            </ul>
+        </div>
         <div ng-controller="navbarController">
           <div class="navbar-fixed" ng-show="navbar.shouldNavBarShow">
               <nav style="z-index:10;box-shadow:None">
@@ -78,7 +85,7 @@
           </div>
 
 
-          <div id="tabs_nav_parent" ng-show="navbar.shouldTabBarShow" style="z-index:1;border-top: 2px solid #c3c3c3;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)">
+          <div id="tabs_nav_parent" ng-show="navbar.shouldTabBarShow" style="z-index:2;border-top: 2px solid #c3c3c3;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)">
               <div id="tabs_nav" class="container" style="margin-top:5px">
 
                   <div class="row">
@@ -100,14 +107,13 @@
 
               </div>
           </div>
+          <div class="popover-arrow" style="margin-left: 8px;margin-top: -18px;"></div>
           <ul id='profile_dropdown' class='dropdown-content' style="margin-top:61px">
               <li><a href="./user_master_page.html">My Profile</a></li>
               <li><a href="./user_settings_page.html">Settings</a></li>
-              <!--<li class="divider"></li>-->
           </ul>
-
           <!-- Profile Dropdown -->
-          <ul id='notification_dropdown' class='dropdown-content' style="">
+          <ul id='notification_dropdown' class='dropdown-content'>
               <li><a href="#!">Profile</a></li>
               <li class="divider"></li>
               <li><a href="#!">Settings</a></li>
@@ -124,5 +130,22 @@
     nav{
       -webkit-transform: translateZ(0);
     }
+    .popover-arrow {
+    top: 1px;
+    clip: rect(0 18px 14px -4px);
+    }
+    .popover-arrow:after {
+    -webkit-transform: rotate(45deg) translate(6px,6px);
+    transform: rotate(45deg) translate(6px,6px);
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,.44);
+}
+.popover-arrow:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+}
+
 </style>
 </html>

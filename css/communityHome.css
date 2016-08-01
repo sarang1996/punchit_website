@@ -80,11 +80,25 @@
 /* Create Community Modal ENDS */
 
 @media only screen and (min-width: 600px) {
-  .container .main_body{
-    margin-top: 7%
+  .container{
+    margin-top: 8%;
   }
-  .create_community_main a .card{
-      text-align: center;
-      width : 100%
+}
+
+@media only screen and (min-width: 993px){
+  .row .col.l3 {
+    width: 23%;
+  }
+  .container {
+    margin-top: 5%
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .main_body {
+    margin-top: 18%
+  }
+  .create_community_main .row .col.s12{
+    width: 80%;
   }
 }

@@ -190,13 +190,13 @@ textarea:focus label{
 }
 
 .main_body .post_card .post_user_img{
-    height: 58.16px;
-    width: 58.16px;
+    height: auto;
+    width: 100%;
 }
 
 .main_body .post_card #post_user_name{
-    font-size: 1.5rem;
-    line-height:  58.16px;
+    font-size: 1.0rem;
+    line-height:  50px;
 }
 
 .main_body .post_card .post_menu{
@@ -206,13 +206,15 @@ textarea:focus label{
 }
 
 .main_body .post_card .post_title_parent_div .post_title{
-    font-size: 1.5rem;
+    font-size: medium;
 }
 
 .main_body .post_card .post_title_parent_div{
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .main_body .post_card .post_images{
@@ -224,6 +226,7 @@ textarea:focus label{
     height: 333px;
     width: 100%;
     border-radius: 5px;
+    z-index: 1
 }
 
 .main_body .post_card .post_images div{
@@ -298,17 +301,57 @@ i.right{
   .row .col.l9{
     margin-left: 14%;
   }
+  .main_body .post_card #post_user_name{
+    line-height: 36px
+  }
 }
 
 @media only screen and (min-width: 601px) {
-  /*tablets and small sized laptops*/
+  /*tablets*/
    #tabs_nav a{
     font-size: medium;
   }
+  .row .col.m2{
+      width: 11.666667%;
+  }
+  .main_body .post_card #post_user_name{
+    line-height: 30px
+  }
+  .main_body .post_card .post_images img{
+    height: 303px;
+  }
+
+  .main_body .post_card .post_images div:first-child{
+      margin-left: 8%
+  }
+
+  .main_body .post_card #post_user_name{
+    font-size: medium;
+  }
+
+  .main_body .post_card #post_user_name #post_timestamp{
+    font-size: small
+  }
+
+  .row .col.m1{
+    width: 21.33%;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 658px) {
   /*mobile devices*/
   #tabs_nav a{
    font-size: smaller;
+ }
+ .main_body .post_card #post_user_name{
+   line-height: 20px
+ }
+ .main_body .post_card .post_title_parent_div .post_title{
+   font-size: small
+ }
+ .main_body .post_card .post_title_parent_div{
+   padding: 0
+ }
+ .main_body .post_card .post_images img{
+   height: 215px;
  }
 }

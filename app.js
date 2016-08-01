@@ -27,6 +27,18 @@
 			controllerAs : 'vm'
 		})
 
+		.when('/fzone',{
+			controller : 'friendZoneController',
+			templateUrl : 'fzone/fzone.html',
+			controllerAs : 'vm'
+		})
+
+		.when('/create_punch',{
+			controller : 'createPunchController',
+			templateUrl  : 'create_punch/createPunch.html',
+			controllerAs : "vm"
+		})
+
 		.otherwise({
 			redirectTo :'/login'
 		});
